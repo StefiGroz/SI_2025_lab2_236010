@@ -57,12 +57,21 @@ Every Statement критериумот бара секоја линија од �
 if (item.getPrice() > 300 || item.getDiscount() > 0 || item.getQuantity() > 10)
 
 Тест случај 	Price > 300	  Discount > 0	 Quantity > 10	 Вредност на условот (OR)	  Објаснување
+
 FFF	 False	False	 False	False	 Ниту еден од условите не е исполнет,  условот е false
+
 FFT	 False	False	 True	 True	   Tретиот услов е True,  значи целата логика е True
+
 FTF	 False	True	 False	True	 Вториот услов е True,  условот е True
+
 FTT	 False	True	 True	 True	 Вториот и третиот услов True,  логика True
+
 TFF	 True	 False	 False	True	Првиот услов е True,  условот е True
+
 TFT	 True	 False	 True	 True	 Првиот и третиот услов True,  условот True
+
 TTF	 True	 True	  False	 True	 Првиот и вториот услов True,  условот True
+
 TTT	 True	 True	  True	 True	 Сите услови True,  логиката е True
+
 Мора да има најмалку 8 тест случаи
